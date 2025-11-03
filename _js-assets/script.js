@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Title: JavaScript Form Validation Tutorial
 // Date Published: n.d.
 // Link/URL: https://www.w3schools.com/js/js_validation.asp
-// Date Accessed: 24/09/2025
+// Date Accessed: 01/11/2025
 
 
 // Code Attribution
@@ -82,5 +82,5 @@ document.addEventListener("DOMContentLoaded", function() {
 // Title: JavaScript HTML DOM Tutorial
 // Date Published: n.d.
 // Link/URL: https://www.w3schools.com/js/js_htmldom.asp
-// Date Accessed: 24/09/2025
+// Date Accessed: 01/11/2025
 
