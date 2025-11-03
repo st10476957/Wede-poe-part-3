@@ -374,6 +374,37 @@ form button:hover {
   box-shadow: 0 0 5px rgba(46, 125, 50, 0.5);
 }
 
+.social-links {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.social-links .facebook {
+  background-color: #1877f2;
+}
+
+.social-links .instagram {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+.social-links .twitter {
+  background-color: #1da1f2;
+}
+
+.social-links a:hover {
+  opacity: 0.8;
+}
+
 
 /*Code Attribution
   Author: W3schools
