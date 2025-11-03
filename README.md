@@ -34,6 +34,7 @@ Added
 - filter search added to services page
 - embedded map added to contact page 
 - off-page and on-page SEO added
+- Add social links to contact page 
 
 ## Technologies Used
 - HTML5 – Structure and content.  
