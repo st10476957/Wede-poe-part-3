@@ -1,13 +1,13 @@
-Geen leaf cafe
+# Geen leaf cafe
 
-Website Goals and Objectives
+## Website Goals and Objectives
 - Create an attractive and user-friendly online presence for Green Leaf Café.
 - Showcase the café’s menu and specialties with appealing visuals.
 - Provide contact options for customer enquiries and reservations.
 - Ensure the website is responsive and accessible on desktop, tablet, and mobile devices.
 - Maintain consistent branding through colors, typography, and layout.
 
-Functional Requirements
+## Functional Requirements
 The website must include the following features:
 1. Homepage – A warm welcome to Green Leaf Café, highlighting our unique offerings.
 2. Menu Section – A showcase of our delicious items, complete with names, descriptions, and mouth-watering images.
@@ -17,7 +17,7 @@ The website must include the following features:
 6. Responsive Layout – A seamless, adaptive design that adjusts perfectly using CSS Grid, Flexbox, and media queries.
 7. Consistent Theme – A unified look and feel, with a consistent color scheme, typography, and design style throughout.
 
-Changelog
+## Changelog
 All notable changes to this project will be documented here.
 
 [1.0.0] - 2025-09-21
@@ -35,8 +35,15 @@ Added
 - embedded map added to contact page 
 - off-page and on-page SEO added
 
-Technologies Used
+## Technologies Used
 - HTML5 – Structure and content.  
 - CSS3 – Styling and responsiveness.  
 - Flexbox & Grid – Layout management.  
-- VS Code – Development environment.  
+- VS Code – Development environment.
+
+## Updated screens 
+![image alt]()
+
+![image alt]()
+
+![image alt]()
