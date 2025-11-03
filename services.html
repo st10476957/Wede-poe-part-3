@@ -26,7 +26,18 @@
   <!-- ===== Menu Section ===== -->
   <section class="highlights">
     <h2 class="section-title">Our Specials</h2>
-    <div class="cards">
+
+    <!-- ===== Filter/Search Bar ===== -->
+    <div class="filter-container">
+      <input
+        type="text"
+        id="menuFilter"
+        placeholder="Search menu items..."
+        onkeyup="filterMenu()"
+      />
+    </div>
+
+    <div class="cards" id="menuCards">
       <!-- Each card is a menu item -->
       <div class="menu-card">
         <img src="_images/cap.jpg" alt="Cappuccino">
@@ -96,13 +107,25 @@
     <p>&copy; 2025 Green Leaf Café. All rights reserved.</p>
   </footer>
 
-  <!-- ===== JavaScript for mobile menu ===== -->
+  <!-- ===== JavaScript for mobile menu & filter ===== -->
   <script>
     const toggle = document.getElementById('menu-toggle');
     const nav = document.getElementById('nav-items');
     toggle.addEventListener('click', () => {
       nav.classList.toggle('show');
     });
+
+    // ===== Filter Function =====
+    function filterMenu() {
+      const input = document.getElementById('menuFilter');
+      const filter = input.value.toLowerCase();
+      const cards = document.querySelectorAll('.menu-card');
+
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+      });
+    }
   </script>
 </body>
 </html>
@@ -110,7 +133,7 @@
 <!--Code Attribution
   Author: W3schools
   Title: HTML Tutorial
-  date published: n.d
-  link/URL: https://www.w3schools.com/html/
-  Date accessed: 24/09/2025
+  Date Published: n.d
+  Link/URL: https://www.w3schools.com/html/
+  Date Accessed: 24/09/2025
 -->

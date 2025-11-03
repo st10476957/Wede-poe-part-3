@@ -28,6 +28,13 @@ Added
 - Responsive Design with Grid and Flexbox, ensuring a smooth user experience.
 - A consistent Color Scheme and Typography, tying everything together seamlessly.
 
+[1.1.0] 2025-11-01
+- Java script error handling add to enquiry page 
+- validation message checks added to enquiry page 
+- filter search added to services page
+- embedded map added to contact page 
+- off-page and on-page SEO added
+
 Technologies Used
 - HTML5 – Structure and content.  
 - CSS3 – Styling and responsiveness.  

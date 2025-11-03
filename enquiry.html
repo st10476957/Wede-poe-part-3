@@ -27,18 +27,24 @@
   <section class="highlights">
     <h2 class="section-title">Send Us an Enquiry</h2>
     <!-- Simple form -->
-    <form class="form-box">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" placeholder="Your name">
+    <form id="enquiryForm">
+  <label>Full Name:</label>
+  <input type="text" name="fullname" placeholder="Your name">
 
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" placeholder="your@email.com">
+  <label>Email Address:</label>
+  <input type="email" name="email" placeholder="your@email.com">
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" placeholder="Write your enquiry..."></textarea>
+  <label>Message:</label>
+  <textarea name="message" placeholder="Write your enquiry..."></textarea>
 
-      <button type="submit" class="btn">Submit</button>
-    </form>
+  <button type="submit">Submit</button>
+
+  <!-- Message display area -->
+  <div id="messageBox"></div>
+</form>
+
+<script src="enquiry.js"></script>
+
   </section>
 
   <!-- ===== Footer ===== -->
@@ -56,6 +62,8 @@
   </script>
 </body>
 </html>
+
+<script src="_js-assets/script.js"></script>
 
 <!--Code Attribution
   Author: W3schools
