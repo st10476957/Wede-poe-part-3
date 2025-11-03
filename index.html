@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | Green Leaf Café</title>
+  <link rel="stylesheet" href="_css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ===== Header with Navigation ===== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <h1 class="brand">Green Leaf Café</h1>
+      <!-- Hamburger icon for mobile view -->
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <!-- Navigation menu -->
+      <ul class="nav-items" id="nav-items">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="services.html">Menu</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to Green Leaf Café</h2>
+      <p>Your daily stop for fresh brews and tasty bites.</p>
+      <a href="services.html" class="btn">See Our Menu</a>
+    </div>
+    <div class="hero-image">
+      <img src="_images/home.jpeg" alt="home">
+    </div>
+  </section>
+
+  <!-- ===== Welcome Message ===== -->
+  <section class="highlights">
+    <h2 class="section-title">A Warm Welcome</h2>
+    <p>At Green Leaf Café, we’re more than just coffee. We’re a community spot where friends gather, ideas flow, and every sip feels like home. Whether you’re here for your morning latte, a quick lunch, or a sweet treat, we’ve got something special waiting for you.</p>
+    <img src="_images/cafein.webp" alt="Café atmosphere">
+  </section>
+
+  <!-- ===== Customer Favorites Section ===== -->
+  <section class="highlights">
+    <h2 class="section-title">Customer Favorites</h2>
+    <div class="cards">
+      <!-- Favorite 1 -->
+      <div class="menu-card">
+        <img src="_images/Latte.webp" alt="Latte">
+        <h3>Vanilla Latte</h3>
+        <p>Creamy, smooth, and infused with natural vanilla for a comforting taste.</p>
+      </div>
+      <!-- Favorite 2 -->
+      <div class="menu-card">
+        <img src="_images/butter.jpg" alt="Croissant">
+        <h3>Butter Croissant</h3>
+        <p>Flaky and golden, baked fresh daily for the perfect start to your day.</p>
+      </div>
+      <!-- Favorite 3 -->
+      <div class="menu-card">
+        <img src="_images/berry.jpg" alt="Smoothie">
+        <h3>Berry Smoothie</h3>
+        <p>A refreshing blend of fresh berries, yogurt, and honey — healthy and delicious.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Green Leaf Café. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== JavaScript for mobile menu ===== -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-items');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
+
+<!--Code Attribution
+  Author: W3schools
+  Title: HTML Tutorial
+  date published: n.d
+  link/URL: https://www.w3schools.com/html/
+  Date accessed: 24/09/2025
+-->

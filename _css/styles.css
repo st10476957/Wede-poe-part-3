@@ -1,0 +1,256 @@
+/* ===== Reset and Base Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ===== Header and Navigation ===== */
+.site-header {
+  background: #2e7d32; /* main café green */
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.nav-items li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-items li a:hover,
+.nav-items li a.active {
+  color: #c8e6c9; /* lighter green on hover */
+}
+
+.menu-toggle {
+  display: none; /* hidden on desktop */
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: #f1f8f5; /* soft greenish background */
+  gap: 2rem;
+}
+
+.hero-content {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2e7d32;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.344);
+}
+
+.hero-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Stack hero on mobile */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content {
+    text-align: center;
+  }
+  .hero-image {
+    text-align: center;
+  }
+}
+
+/* ===== Buttons ===== */
+.btn {
+  background: #2e7d32;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #1b5e20;
+}
+
+/* ===== Sections and Highlights ===== */
+.section-title {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+  color: #2e7d32;
+}
+
+.highlights {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.highlights p {
+  max-width: 700px;
+  margin: 1rem auto;
+}
+
+.highlights img {
+  margin-top: 1rem;
+  max-width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== Cards (Menu / Favorites / Contact Info) ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.menu-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.menu-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #ebfded;
+}
+
+.menu-card:hover img {
+    transform: scale(1.05);
+}
+
+/* ===== Forms ===== */
+.form-box {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-box input,
+.form-box textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-box button {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background: #1b5e20;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2e7d32;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* ===== Responsive Navigation (Mobile) ===== */
+@media (max-width: 768px) {
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    background: #388e3c;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+
+  .nav-items.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block; /* show hamburger on small screens */
+  }
+}
+
+/*Code Attribution
+  Author: W3schools
+  Title: CSS Tutorial
+  date published: n.d
+  link/URL: https://www.w3schools.com/Css/
+  Date accessed: 24/09/2025
+*/
