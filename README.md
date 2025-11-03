@@ -44,6 +44,6 @@ Added
 ## Updated screens 
 ![image alt](update1.png)
 
-![image alt]()
+![image alt](update2.png)
 
 ![image alt]()
